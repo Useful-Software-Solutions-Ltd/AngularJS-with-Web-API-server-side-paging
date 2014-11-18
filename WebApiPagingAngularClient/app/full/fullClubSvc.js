@@ -5,9 +5,9 @@
         .module('app')
         .factory('fullClubSvc', fullClubSvc);
 
-    fullClubSvc.$inject = ['$http', '$q', 'clubClientSvc'];
+    fullClubSvc.$inject = ['$q', 'clubClientSvc'];
 
-    function fullClubSvc($http, $q, clubClientSvc) {
+    function fullClubSvc($q, clubClientSvc) {
         var initialOptions = {
             size: 4,
             orderBy: "name"

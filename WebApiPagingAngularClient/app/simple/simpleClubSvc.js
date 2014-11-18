@@ -5,9 +5,9 @@
         .module('app')
         .factory('simpleClubSvc', simpleClubSvc);
 
-    simpleClubSvc.$inject = ['$http', '$q', 'clubClientSvc'];
+    simpleClubSvc.$inject = ['$q', 'clubClientSvc'];
 
-    function simpleClubSvc($http, $q, clubClientSvc) {
+    function simpleClubSvc($q, clubClientSvc) {
         var initialOptions ={
             size: 4,            
             orderBy: "name"
